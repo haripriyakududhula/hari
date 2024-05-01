@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{ 
+        margin: 300px;
+        margin-left: 35%;
+        width: 20%;
+      
+        text-align: center;
+        font-family: cursive;
+        padding: 20px;
+        border: solid;
+       background-color: rgba(218, 66, 66, 0.819);
+       color: rgb(51, 48, 38);
+    }
+    body{
+        background-color: rgb(151, 211, 214);
+    }
+    
+</style>
+<body>
+    <script>
+        
+       
+     clockprint= ()=>{
+        let Sandeep = new Date();
+        document.querySelector("h1").innerHTML = Sandeep.getHours()+":"+Sandeep.getMinutes()+":"+Sandeep.getSeconds();
+    
+     }
+   
+    setInterval(()=>{ clockprint()},1000)
+       
+
+    </script>
+    <h1></h1>
+</body>
+</html>
